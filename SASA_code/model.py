@@ -49,7 +49,7 @@ class SASA(object):
             # sacled
             if scaled:
                 d_k = tf.cast(tf.shape(K)[-1], dtype=tf.float32)
-                attention_weight = tf.divide(attention_weight, tf.sqrt(d_k))  # [batch_size, segments_num, segments_num]
+                attention_weight = tf.divide(attention_weight, tf.sqrt(d_k))  # [batch_size, 1, segments_num]
 
             if sparse:
                 # The implementation of sparsemax requires the tensor of rank 2

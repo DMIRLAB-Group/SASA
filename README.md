@@ -14,3 +14,5 @@ If you need to apply our model to other datasets, you need to change the paramet
 ```
 python train.py
 ```
+
+And the Pytorch version can be found in SASA-Pytorch(https://github.com/DMIRLAB-Group/SASA-pytorch)
